@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
-@interface XLCSVViewController : UIViewController
+@class XLColorScrollView;
+
+@interface XLCSVViewController : UIViewController <UIScrollViewDelegate> {
+    XLColorScrollView *colorScrollView;
+    SystemSoundID bSoundID;
+    NSUInteger colorScrollViewCurrentIndex;
+}
 
 @end

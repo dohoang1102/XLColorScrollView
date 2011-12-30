@@ -15,6 +15,9 @@
 		2EE1A26814AD993E00850C6D /* XLCSVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1A26714AD993E00850C6D /* XLCSVAppDelegate.m */; };
 		2EE1A26B14AD993E00850C6D /* XLCSVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1A26A14AD993E00850C6D /* XLCSVViewController.m */; };
 		2EE1A26E14AD993E00850C6D /* XLCSVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE1A26C14AD993E00850C6D /* XLCSVViewController.xib */; };
+		2EE1A27D14AD9E4B00850C6D /* XLColorScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1A27C14AD9E4B00850C6D /* XLColorScrollView.m */; };
+		2EE1A28014ADA0C500850C6D /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2EE1A27F14ADA0C500850C6D /* B.wav */; };
+		2EE1A28214ADA11600850C6D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE1A28114ADA11600850C6D /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,19 @@
 		2EE1A25714AD993E00850C6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2EE1A25914AD993E00850C6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2EE1A25B14AD993E00850C6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2EE1A25F14AD993E00850C6D /* XLColorScrollView-Info.plist */ = {isa = PBXFileReference; path = "XLColorScrollView-Info.plist"; sourceTree = "<group>"; };
+		2EE1A25F14AD993E00850C6D /* XLColorScrollView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XLColorScrollView-Info.plist"; sourceTree = "<group>"; };
 		2EE1A26114AD993E00850C6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2EE1A26314AD993E00850C6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2EE1A26514AD993E00850C6D /* XLColorScrollView-Prefix.pch */ = {isa = PBXFileReference; path = "XLColorScrollView-Prefix.pch"; sourceTree = "<group>"; };
-		2EE1A26614AD993E00850C6D /* XLCSVAppDelegate.h */ = {isa = PBXFileReference; path = XLCSVAppDelegate.h; sourceTree = "<group>"; };
+		2EE1A26514AD993E00850C6D /* XLColorScrollView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XLColorScrollView-Prefix.pch"; sourceTree = "<group>"; };
+		2EE1A26614AD993E00850C6D /* XLCSVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLCSVAppDelegate.h; sourceTree = "<group>"; };
 		2EE1A26714AD993E00850C6D /* XLCSVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLCSVAppDelegate.m; sourceTree = "<group>"; };
-		2EE1A26914AD993E00850C6D /* XLCSVViewController.h */ = {isa = PBXFileReference; path = XLCSVViewController.h; sourceTree = "<group>"; };
+		2EE1A26914AD993E00850C6D /* XLCSVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLCSVViewController.h; sourceTree = "<group>"; };
 		2EE1A26A14AD993E00850C6D /* XLCSVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLCSVViewController.m; sourceTree = "<group>"; };
 		2EE1A26D14AD993E00850C6D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/XLCSVViewController.xib; sourceTree = "<group>"; };
+		2EE1A27B14AD9E4B00850C6D /* XLColorScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLColorScrollView.h; sourceTree = "<group>"; };
+		2EE1A27C14AD9E4B00850C6D /* XLColorScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLColorScrollView.m; sourceTree = "<group>"; };
+		2EE1A27F14ADA0C500850C6D /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		2EE1A28114ADA11600850C6D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE1A28214ADA11600850C6D /* AudioToolbox.framework in Frameworks */,
 				2EE1A25814AD993E00850C6D /* UIKit.framework in Frameworks */,
 				2EE1A25A14AD993E00850C6D /* Foundation.framework in Frameworks */,
 				2EE1A25C14AD993E00850C6D /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +75,7 @@
 		2EE1A25614AD993E00850C6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EE1A28114ADA11600850C6D /* AudioToolbox.framework */,
 				2EE1A25714AD993E00850C6D /* UIKit.framework */,
 				2EE1A25914AD993E00850C6D /* Foundation.framework */,
 				2EE1A25B14AD993E00850C6D /* CoreGraphics.framework */,
@@ -82,7 +91,10 @@
 				2EE1A26914AD993E00850C6D /* XLCSVViewController.h */,
 				2EE1A26A14AD993E00850C6D /* XLCSVViewController.m */,
 				2EE1A26C14AD993E00850C6D /* XLCSVViewController.xib */,
+				2EE1A27B14AD9E4B00850C6D /* XLColorScrollView.h */,
+				2EE1A27C14AD9E4B00850C6D /* XLColorScrollView.m */,
 				2EE1A25E14AD993E00850C6D /* Supporting Files */,
+				2EE1A27E14ADA0C500850C6D /* Resources */,
 			);
 			path = XLColorScrollView;
 			sourceTree = "<group>";
@@ -96,6 +108,14 @@
 				2EE1A26514AD993E00850C6D /* XLColorScrollView-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EE1A27E14ADA0C500850C6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EE1A27F14ADA0C500850C6D /* B.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +171,7 @@
 			files = (
 				2EE1A26214AD993E00850C6D /* InfoPlist.strings in Resources */,
 				2EE1A26E14AD993E00850C6D /* XLCSVViewController.xib in Resources */,
+				2EE1A28014ADA0C500850C6D /* B.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +185,7 @@
 				2EE1A26414AD993E00850C6D /* main.m in Sources */,
 				2EE1A26814AD993E00850C6D /* XLCSVAppDelegate.m in Sources */,
 				2EE1A26B14AD993E00850C6D /* XLCSVViewController.m in Sources */,
+				2EE1A27D14AD9E4B00850C6D /* XLColorScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

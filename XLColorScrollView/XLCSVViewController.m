@@ -7,54 +7,71 @@
 //
 
 #import "XLCSVViewController.h"
+#import "XLColorScrollView.h"
 
 @implementation XLCSVViewController
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
+    NSArray *colors = [NSArray arrayWithObjects:[UIColor blueColor],
+                                                [UIColor redColor],
+                                                [UIColor yellowColor],
+                                                [UIColor purpleColor],
+                                                [UIColor blackColor],
+                                                [UIColor grayColor],
+                                                [UIColor brownColor],
+                                                nil];
+    colorScrollView = [[XLColorScrollView alloc] initWithFrame:CGRectMake(100.0, 0.0, 80.0, 480.0) colors:colors edgeColor:[UIColor blackColor] verticalAnchorOffset:0.0];
+    colorScrollView.delegate = self;
+    [self.view addSubview:colorScrollView];
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGColorRef strokeColor = [UIColor blackColor].CGColor;
+    CGContextSetStrokeColorWithColor(context, strokeColor);
+    CGContextSetLineWidth(context, 2.0);
+    CGFloat fillColor[] = {0.5, 0.5, 0.5, 1.0};
+    CGContextSetFillColor(context, fillColor);
+    CGContextAddRect(context, CGRectMake(-2.0, 200.0, 324.0, 80.0));
+    CGContextDrawPath(context, kCGPathFillStroke);
+    UIImage *lineImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    UIImageView *selectionView = [[UIImageView alloc] initWithImage:lineImage];
+    [self.view addSubview:selectionView];
+    [selectionView release];
+    
+    NSURL *bSoundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"B" ofType:@"wav"]];
+    AudioServicesCreateSystemSoundID((CFURLRef)bSoundURL, &bSoundID);
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (colorScrollView.currentIndex != colorScrollViewCurrentIndex) {
+        colorScrollViewCurrentIndex = colorScrollView.currentIndex;
+        AudioServicesPlaySystemSound(bSoundID);
+    }
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if (decelerate) return;
+    [colorScrollView scrollToNearest];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [colorScrollView scrollToNearest];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    [colorScrollView scrollToNearest];
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+- (void)dealloc {
+    AudioServicesDisposeSystemSoundID(bSoundID);
+    [colorScrollView release];
+    [super dealloc];
 }
 
 @end
