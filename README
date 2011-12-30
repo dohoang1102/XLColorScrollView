@@ -1,0 +1,21 @@
+
+  XLCSVViewController.h
+  XLColorScrollView
+
+  Created by Richard Wei on 11-12-30.
+  Copyright (c) 2011 Xinranmsn Labs. All rights reserved.
+
+XLColorScrollView is a fancy view which is used in Resistor (iTunes Link: http://itunes.apple.com/us/app/resistor/id474536047?mt=8). It's a subclass of UIScrollView, and is a smart way to let user to select something through colors.
+
+Instructions:
+1. Add XLColorScrollView.h and XLColorScrollView.m into your own project.
+2. Write code to add XLScrollView as a subview of your current view;
+3. Implement UIScrollView delegate methods.
+
+Tip:
+1. Adjust verticalAnchorOffset when initializing in order to make the inner picture of colors appear at the right place.
+
+Future of this project:
+1. The picture of colors will be replaced with real time drawing.
+2. AppKit version is coming soon.
+

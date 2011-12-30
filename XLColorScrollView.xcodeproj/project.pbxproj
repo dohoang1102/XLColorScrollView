@@ -18,6 +18,7 @@
 		2EE1A27D14AD9E4B00850C6D /* XLColorScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1A27C14AD9E4B00850C6D /* XLColorScrollView.m */; };
 		2EE1A28014ADA0C500850C6D /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2EE1A27F14ADA0C500850C6D /* B.wav */; };
 		2EE1A28214ADA11600850C6D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE1A28114ADA11600850C6D /* AudioToolbox.framework */; };
+		2EE1A28414ADE07600850C6D /* README in Resources */ = {isa = PBXBuildFile; fileRef = 2EE1A28314ADE07600850C6D /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2EE1A27C14AD9E4B00850C6D /* XLColorScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLColorScrollView.m; sourceTree = "<group>"; };
 		2EE1A27F14ADA0C500850C6D /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
 		2EE1A28114ADA11600850C6D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2EE1A28314ADE07600850C6D /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		2EE1A24814AD993E00850C6D = {
 			isa = PBXGroup;
 			children = (
+				2EE1A28314ADE07600850C6D /* README */,
 				2EE1A25D14AD993E00850C6D /* XLColorScrollView */,
 				2EE1A25614AD993E00850C6D /* Frameworks */,
 				2EE1A25414AD993E00850C6D /* Products */,
@@ -172,6 +175,7 @@
 				2EE1A26214AD993E00850C6D /* InfoPlist.strings in Resources */,
 				2EE1A26E14AD993E00850C6D /* XLCSVViewController.xib in Resources */,
 				2EE1A28014ADA0C500850C6D /* B.wav in Resources */,
+				2EE1A28414ADE07600850C6D /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
