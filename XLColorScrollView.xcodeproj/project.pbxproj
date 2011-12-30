@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EE1A25814AD993E00850C6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE1A25714AD993E00850C6D /* UIKit.framework */; };
+		2EE1A25A14AD993E00850C6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE1A25914AD993E00850C6D /* Foundation.framework */; };
+		2EE1A25C14AD993E00850C6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE1A25B14AD993E00850C6D /* CoreGraphics.framework */; };
+		2EE1A26214AD993E00850C6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EE1A26014AD993E00850C6D /* InfoPlist.strings */; };
+		2EE1A26414AD993E00850C6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1A26314AD993E00850C6D /* main.m */; };
+		2EE1A26814AD993E00850C6D /* XLCSVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1A26714AD993E00850C6D /* XLCSVAppDelegate.m */; };
+		2EE1A26B14AD993E00850C6D /* XLCSVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE1A26A14AD993E00850C6D /* XLCSVViewController.m */; };
+		2EE1A26E14AD993E00850C6D /* XLCSVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE1A26C14AD993E00850C6D /* XLCSVViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2EE1A25314AD993E00850C6D /* XLColorScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLColorScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EE1A25714AD993E00850C6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2EE1A25914AD993E00850C6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2EE1A25B14AD993E00850C6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2EE1A25F14AD993E00850C6D /* XLColorScrollView-Info.plist */ = {isa = PBXFileReference; path = "XLColorScrollView-Info.plist"; sourceTree = "<group>"; };
+		2EE1A26114AD993E00850C6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2EE1A26314AD993E00850C6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2EE1A26514AD993E00850C6D /* XLColorScrollView-Prefix.pch */ = {isa = PBXFileReference; path = "XLColorScrollView-Prefix.pch"; sourceTree = "<group>"; };
+		2EE1A26614AD993E00850C6D /* XLCSVAppDelegate.h */ = {isa = PBXFileReference; path = XLCSVAppDelegate.h; sourceTree = "<group>"; };
+		2EE1A26714AD993E00850C6D /* XLCSVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLCSVAppDelegate.m; sourceTree = "<group>"; };
+		2EE1A26914AD993E00850C6D /* XLCSVViewController.h */ = {isa = PBXFileReference; path = XLCSVViewController.h; sourceTree = "<group>"; };
+		2EE1A26A14AD993E00850C6D /* XLCSVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLCSVViewController.m; sourceTree = "<group>"; };
+		2EE1A26D14AD993E00850C6D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/XLCSVViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EE1A25014AD993E00850C6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE1A25814AD993E00850C6D /* UIKit.framework in Frameworks */,
+				2EE1A25A14AD993E00850C6D /* Foundation.framework in Frameworks */,
+				2EE1A25C14AD993E00850C6D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EE1A24814AD993E00850C6D = {
+			isa = PBXGroup;
+			children = (
+				2EE1A25D14AD993E00850C6D /* XLColorScrollView */,
+				2EE1A25614AD993E00850C6D /* Frameworks */,
+				2EE1A25414AD993E00850C6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EE1A25414AD993E00850C6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EE1A25314AD993E00850C6D /* XLColorScrollView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EE1A25614AD993E00850C6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EE1A25714AD993E00850C6D /* UIKit.framework */,
+				2EE1A25914AD993E00850C6D /* Foundation.framework */,
+				2EE1A25B14AD993E00850C6D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EE1A25D14AD993E00850C6D /* XLColorScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				2EE1A26614AD993E00850C6D /* XLCSVAppDelegate.h */,
+				2EE1A26714AD993E00850C6D /* XLCSVAppDelegate.m */,
+				2EE1A26914AD993E00850C6D /* XLCSVViewController.h */,
+				2EE1A26A14AD993E00850C6D /* XLCSVViewController.m */,
+				2EE1A26C14AD993E00850C6D /* XLCSVViewController.xib */,
+				2EE1A25E14AD993E00850C6D /* Supporting Files */,
+			);
+			path = XLColorScrollView;
+			sourceTree = "<group>";
+		};
+		2EE1A25E14AD993E00850C6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EE1A25F14AD993E00850C6D /* XLColorScrollView-Info.plist */,
+				2EE1A26014AD993E00850C6D /* InfoPlist.strings */,
+				2EE1A26314AD993E00850C6D /* main.m */,
+				2EE1A26514AD993E00850C6D /* XLColorScrollView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EE1A25214AD993E00850C6D /* XLColorScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EE1A27114AD993E00850C6D /* Build configuration list for PBXNativeTarget "XLColorScrollView" */;
+			buildPhases = (
+				2EE1A24F14AD993E00850C6D /* Sources */,
+				2EE1A25014AD993E00850C6D /* Frameworks */,
+				2EE1A25114AD993E00850C6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XLColorScrollView;
+			productName = XLColorScrollView;
+			productReference = 2EE1A25314AD993E00850C6D /* XLColorScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EE1A24A14AD993E00850C6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Xinranmsn Labs";
+			};
+			buildConfigurationList = 2EE1A24D14AD993E00850C6D /* Build configuration list for PBXProject "XLColorScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2EE1A24814AD993E00850C6D;
+			productRefGroup = 2EE1A25414AD993E00850C6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EE1A25214AD993E00850C6D /* XLColorScrollView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EE1A25114AD993E00850C6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE1A26214AD993E00850C6D /* InfoPlist.strings in Resources */,
+				2EE1A26E14AD993E00850C6D /* XLCSVViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EE1A24F14AD993E00850C6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE1A26414AD993E00850C6D /* main.m in Sources */,
+				2EE1A26814AD993E00850C6D /* XLCSVAppDelegate.m in Sources */,
+				2EE1A26B14AD993E00850C6D /* XLCSVViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EE1A26014AD993E00850C6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EE1A26114AD993E00850C6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2EE1A26C14AD993E00850C6D /* XLCSVViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EE1A26D14AD993E00850C6D /* en */,
+			);
+			name = XLCSVViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EE1A26F14AD993E00850C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2EE1A27014AD993E00850C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EE1A27214AD993E00850C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XLColorScrollView/XLColorScrollView-Prefix.pch";
+				INFOPLIST_FILE = "XLColorScrollView/XLColorScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2EE1A27314AD993E00850C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XLColorScrollView/XLColorScrollView-Prefix.pch";
+				INFOPLIST_FILE = "XLColorScrollView/XLColorScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EE1A24D14AD993E00850C6D /* Build configuration list for PBXProject "XLColorScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE1A26F14AD993E00850C6D /* Debug */,
+				2EE1A27014AD993E00850C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EE1A27114AD993E00850C6D /* Build configuration list for PBXNativeTarget "XLColorScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE1A27214AD993E00850C6D /* Debug */,
+				2EE1A27314AD993E00850C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EE1A24A14AD993E00850C6D /* Project object */;
+}
