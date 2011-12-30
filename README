@@ -5,7 +5,7 @@
   Created by Richard Wei on 11-12-30.
   Copyright (c) 2011 Xinranmsn Labs. All rights reserved.
 
-XLColorScrollView is a fancy view which is used in Resistor (iTunes Link: http://itunes.apple.com/us/app/resistor/id474536047?mt=8). It's a subclass of UIScrollView, and is a smart way to let user to select something through colors.
+XLColorScrollView is a fancy menu which is used in Resistor (iTunes Link: http://itunes.apple.com/us/app/resistor/id474536047?mt=8). It's a subclass of UIScrollView, and is a smart way to let users to select something through colors.
 
 Instructions:
 1. Add XLColorScrollView.h and XLColorScrollView.m into your own project.
